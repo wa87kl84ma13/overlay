@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Manrope', sans-serif;
 }
@@ -39,21 +35,20 @@ img {
     width: 30%;
 }
 
-.product-overlay-blocks {
-    display: none;
-}
-
+/*
 .show-overlay {
     display: flex;
 }
+*/
 
-.overlay-blocks-background {
+.product-overlay-blocks {
     background: #fff;
     position: absolute;
     top: 20%;
     padding: 25px;
     max-width: 1140px;
     left: 10%;
+    display: none;
 }
 
 .overlay-block {
