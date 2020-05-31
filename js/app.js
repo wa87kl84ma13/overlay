@@ -1,19 +1,9 @@
-var modal = document.getElementById('modal');
-var closeModal = document.getElementById('close-modal');
-var productBlocks = document.querySelectorAll('.product-block');
-var overlayBlocks = document.querySelectorAll('.product-overlay-blocks');
+$('.product-block').click(function() {
+    $(this).find('.product-overlay-blocks').css('display', 'flex');
+    $('#modal').css('display', 'block');
+})
 
-productBlocks.forEach(function(block) {
-    block.addEventListener('click', function() {
-        this.getElementsByClassName('product-overlay-blocks')[0].style.display = 'flex';
-        this.getElementsByClassName('product-overlay-blocks')[0].style.display = 'flex';
-        modal.style.display = 'block';
-    });
-});
-
-closeModal.addEventListener('click', function() {
-    overlayBlocks.forEach(function(overlay) {
-        overlay.style.display = 'none';
-    });
-    modal.style.display = 'none';
+$('#close-modal').click(function() {
+    $('#modal').css('display', 'none');
+    $('.product-overlay-blocks').css('display', 'none');
 });
