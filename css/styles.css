@@ -75,3 +75,12 @@ img {
     font-weight: 400;
     transform: rotate(45deg);
 }
+
+.game-btn {
+    text-decoration: none;
+    background: #d95353;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    color: #fff;
+}
